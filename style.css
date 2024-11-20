@@ -904,7 +904,8 @@ body{
 	padding:120px 0;
 }
 .fun-facts{
-	background:url('img/fun-bg.jpg');
+	/* background:url('img/fun-bg.jpg'); */
+	background:url('img/coconut_banner.png');
 	background-size:cover;
 	background-repeat:no-repeat;
 }
@@ -1070,7 +1071,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('img/agri-impex/coconut/1.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
@@ -1715,7 +1716,7 @@ body{
 	Start Clients CSS
 ==========================*/
 .clients{
-	background-image:url('img/client-bg.jpg');
+	background-image:url('img/agri-impex/coconut/1.jpg');
 	background-size:cover;
 	background-position:center;
 	padding:100px 0px;
@@ -2373,7 +2374,8 @@ body{
 }
 /* Blockqoute */
 .news-single blockquote {
-	background-image: url('img/blockqoute-bg.jpg');
+	/* background-image: url('img/blockqoute-bg.jpg'); */
+	background-image: url('img/agri-impex/banana/banana.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
