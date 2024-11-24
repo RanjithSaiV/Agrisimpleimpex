@@ -151,7 +151,7 @@
 													<li><a href="404.html">404 Error</a></li>
 												</ul>
 											</li> -->
-										
+
 										<li><a href="price-details.html">Price List</a></li>
 										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
@@ -176,6 +176,201 @@
 	<!-- =================================== -->
 	<!-- BODY OF WEBPAGE -->
 	<!-- ============================================= -->
+	<!-- <style>
+		.progress-container {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+		}
+
+		.progress-ring {
+			margin: 5px;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.ring-label {
+			font-size: 20px;
+			font-weight: 600;
+			margin-top: 30px;
+		}
+
+		.percentage-text {
+			font-size: 24px;
+			font-weight: 600;
+			fill: #000;
+		}
+
+		.progress-section{
+
+			margin: 60px 30px;
+			padding: 25px;
+		}
+	</style> -->
+<style>
+
+	*,*:after,*:before{ 
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box; 
+		-ms-box-sizing: border-box; 
+		box-sizing: border-box; 
+	} 
+	.progress-section{ 
+		font-family: arial; 
+		font-size: 16px; 
+		margin: 0; 
+		background: #122325; 
+		display: flex; 
+		align-items: center; 
+		justify-content: space-around; 
+		height: 100vh; 
+	} 
+	
+	svg{ 
+		width: 200px; 
+		height: 200px;	 
+		transform: rotate(-90deg); 
+		overflow: initial; 
+	} 
+	
+	circle{ 
+		stroke-width:20px; 
+		fill:none;	 
+	} 
+	circle:nth-child(1){ stroke: #fff } 
+	circle:nth-child(2){ 
+		stroke: #f00; 
+		position: relative; 
+		z-index: 1;	 
+	} 
+	.circle_box:nth-child(1) circle:nth-child(2){ 
+		stroke-dashoffset:calc(100 * 6); 
+		stroke-dasharray:calc(100 * 6); 
+		stroke-dashoffset:calc((100 * 6) - ((100 * 6) * 90) / 100); 
+		stroke-position: inside; 
+	} 
+	.circle_box:nth-child(2) circle:nth-child(2){ 
+		stroke-dashoffset:calc(100 * 6); 
+		stroke-dasharray:calc(100 * 6); 
+		stroke-dashoffset:calc((100 * 6) - ((100 * 6) * 75) / 100); 
+		stroke: rgb(37, 224, 109); 
+	} 
+	.circle_box:nth-child(3) circle:nth-child(2){ 
+		stroke-dashoffset:calc(100 * 6); 
+		stroke-dasharray:calc(100 * 6); 
+		stroke-dashoffset:calc((100 * 6) - ((100 * 6) * 40) / 100); 
+		stroke: rgb(227, 241, 25); 
+	} 
+	.circle_box{ 
+		font-size: 36px; 
+		color: #fff; 
+		text-align: center; 
+	} 
+	.circle_box div{ 
+		position: relative; 
+	} 
+	.circle_box span{ 
+		position: absolute; 
+		left: 50%; 
+		top:50%; 
+		transform: translate(-50%,-50%); 
+		color: #fff; 
+		font-size: 40px; 
+	} 
+	
+</style>
+
+	<section class="progress-section">
+
+<!-- 
+		<div class="progress-container">
+			<div class="progress-ring">
+				<svg width="150" height="150">
+					<circle cx="75" cy="75" r="70" stroke="#e6e6e6" stroke-width="15" fill="none"></circle>
+					<circle cx="75" cy="75" r="70" stroke="#4caf50" stroke-width="15" stroke-dasharray="440"
+						stroke-dashoffset="132" fill="none"></circle>
+					<text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage-text">70%</text>
+				</svg>
+				<span class="ring-label">Organic</span>
+			</div>
+
+			<div class="progress-ring">
+				<svg width="150" height="150">
+					<circle cx="75" cy="75" r="70" stroke="#e6e6e6" stroke-width="15" fill="none"></circle>
+					<circle cx="75" cy="75" r="70" stroke="#ff9800" stroke-width="15" stroke-dasharray="440"
+						stroke-dashoffset="88" fill="none"></circle>
+					<text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage-text">80%</text>
+				</svg>
+				<span class="ring-label">Fresh</span>
+			</div>
+
+			<div class="progress-ring">
+				<svg width="150" height="150">
+					<circle cx="75" cy="75" r="70" stroke="#e6e6e6" stroke-width="15" fill="none"></circle>
+					<circle cx="75" cy="75" r="70" stroke="#2196f3" stroke-width="15" stroke-dasharray="440"
+						stroke-dashoffset="22" fill="none"></circle>
+					<text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage-text">95%</text>
+				</svg>
+				<span class="ring-label">Quality</span>
+			</div>
+		</div> -->
+
+
+		<div class="circle_box"> 
+			<div> 
+				<svg> 
+					<circle cx="100" cy="100" r="95" /> 
+					<circle cx="100" cy="100" r="95" /> 
+				</svg> 
+				<span>90%</span> 
+			</div> 
+			<strong>c++ developer</strong> 
+		</div> 
+		<div class="circle_box"> 
+			<div> 
+				<svg> 
+					<circle cx="100" cy="100" r="95" /> 
+					<circle cx="100" cy="100" r="95" /> 
+				</svg> 
+				<span>75%</span> 
+			</div> 
+			<strong>python developer</strong> 
+		</div> 
+		<div class="circle_box"> 
+			<div> 
+				<svg> 
+					<circle cx="100" cy="100" r="95" /> 
+					<circle cx="100" cy="100" r="95" /> 
+				</svg> 
+				<span>40%</span> 
+			</div> 
+			<strong>php developer</strong> 
+		</div> 
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	<!-- Start Newsletter Area -->

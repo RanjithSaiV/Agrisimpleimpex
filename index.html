@@ -63,6 +63,33 @@
 			text-align: center;
 			height: 100px;
 		}
+
+		.carousel-control-prev,
+		.carousel-control-next {
+			height: auto;
+			/* Resets full height to default */
+			width: 5%;
+			/* Adjust width for better clickability */
+			background-color: transparent;
+			/* Removes the white shade */
+		}
+
+		.carousel-control-prev-icon,
+		.carousel-control-next-icon {
+			background-color: rgba(0, 0, 0, 0.5);
+			/* Optional: Customize button icon background */
+			background-size: 100%, 100%;
+			/* Ensures the icon fits properly */
+			border-radius: 50%;
+			/* Optional: Add rounded buttons */
+		}
+		.carousel-inner img{
+
+			width: 250px;
+			height: 550px;
+			object-fit: cover;
+
+		}
 	</style>
 
 </head>
@@ -155,11 +182,12 @@
 												<li><a href="Bananas.html">Banana</a></li>
 												<!-- <li><a href="freshcoconut.html">Fresh Coconut</a></li> -->
 												<li><a href="green-coconut.html">Tender Coconut</a></li>
-												<li><a href="Fresh-coconut.html">Fresh Coconut</a></li>
+												<!-- <li><a href="Fresh-coconut.html">Fresh Coconut</a></li> -->
 
 
 											</ul>
 										</li>
+										<li><a href="bananaspecification.html">Specification</a></li>
 										<!-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="404.html">404 Error</a></li>
@@ -170,7 +198,7 @@
 												<li><a href="blog-single.html">Blog Details</a></li>
 											</ul>
 										</li> -->
-										<li><a href="price-details.html">Price List</a></li>
+										<!-- <li><a href="price-details.html">Price List</a></li> -->
 										<li><a href="contact.html">Contact Us</a></li>
 									</ul>
 								</nav>
@@ -326,54 +354,45 @@
 
 
 	<!-- Start Fun-facts -->
-	<div id="fun-facts" class="fun-facts section overlay">
+	<div id="fun-facts" class="fun-facts section overlay" style="background: #74ff7463;">
+		<h1 style="color: #ffffff;">About Products</h1>
 		<div class="container">
+
 			<div class="row">
-				<div class="col-lg-3 col-md-6 col-12">
+				<div class="col-lg-4 col-md-6 col-12">
 					<!-- Start Single Fun -->
 					<div class="single-fun">
 						<i class="icofont icofont-users-alt-2"></i>
 						<div class="content">
-							<span class="counter">3468</span>
-							<p>Total Buyers</p>
+							<span class="counter">71</span>
+							<p>Organic</p>
 						</div>
 					</div>
 					<!-- End Single Fun -->
 				</div>
-				<div class="col-lg-3 col-md-6 col-12">
+				<div class="col-lg-4 col-md-6 col-12">
 					<!-- Start Single Fun -->
 					<div class="single-fun">
 						<i class="icofont icofont-delivery-time"></i>
 						<div class="content">
-							<span class="counter">5557</span>
-							<p>Total Products Exported</p>
+							<span class="counter">80</span>%
+							<p>Fresh</p>
 						</div>
 					</div>
 					<!-- End Single Fun -->
 				</div>
-				<div class="col-lg-3 col-md-6 col-12">
+				<div class="col-lg-4 col-md-6 col-12">
 					<!-- Start Single Fun -->
 					<div class="single-fun">
 						<i class="icofont icofont-farmer"></i>
 						<div class="content">
-							<span class="counter">46</span>
-							<p>Number of Farmers Partnered</p>
+							<span class="counter">90</span>%
+							<p>Quality</p>
 						</div>
 					</div>
 					<!-- End Single Fun -->
 				</div>
-				<div class="col-lg-3 col-md-6 col-12">
-					<!-- Start Single Fun -->
-					<div class="single-fun">
-						<i class="icofont icofont-globe"></i>
-						<div class="content">
-							<span class="counter">32</span>
-							<p> Countries Exported To
-							</p>
-						</div>
-					</div>
-					<!-- End Single Fun -->
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -431,22 +450,34 @@
 				</div>
 				<div class="col-lg-6 col-12">
 					<!-- Start Choose Rights -->
-					<div class="choose-right">
-						<div class="video-image">
-							<!-- Video Animation -->
-							<!-- <div class="promo-video">
-								<div class="waves-block">
-									<div class="waves wave-1"></div>
-									<div class="waves wave-2"></div>
-									<div class="waves wave-3"></div>
+					<!-- <div class="choose-right">
+						
+					</div> -->
+					<div id="carouselDemo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/agri-impex/5.webp" class="d-block w-100" alt="First slide">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Hello</h5>
 								</div>
-							</div> -->
-							<!--/ End Video Animation -->
-
-							<!-- <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4"
-								class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
+							</div>
+							<div class="carousel-item">
+								<img src="img/agri-impex/6.webp" class="d-block w-100" alt="Second slide">
+							</div>
 						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselDemo"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						</button>
 					</div>
+
+
+
+
 					<!-- End Choose Rights -->
 				</div>
 			</div>
@@ -618,7 +649,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-12">
-					<div class="owl-carousel clients-slider" style="    display: flex;justify-content: space-around;align-items: center;;">
+					<div class="owl-carousel clients-slider"
+						style="    display: flex;justify-content: space-around;align-items: center;;">
 						<div class="single-clients">
 							<img src="img/agri-impex/appeda.png" style="width: 250px;height:max-content;" class="fssai"
 								alt="#">
@@ -778,7 +810,7 @@
 	<!-- Color JS -->
 	<script src="js/colors.js"></script>
 	<!-- Popper JS -->
-	<script src="js/popper.min.js"></script>
+	<!-- <script src="js/popper.min.js"></script> -->
 	<!-- Bootstrap Datepicker JS -->
 	<script src="js/bootstrap-datepicker.js"></script>
 	<!-- Jquery Nav JS -->
@@ -804,9 +836,14 @@
 	<!-- Counter Up CDN JS -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 	<!-- Bootstrap JS -->
-	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+
+
 </body>
 
 </html>
