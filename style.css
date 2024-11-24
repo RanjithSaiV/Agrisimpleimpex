@@ -1011,7 +1011,16 @@ body{
 .why-choose .choose-right{
 	height:100%;
 	width:100%;
-	background-image:url('img/agri-impex/banana/3.jpg');
+	background-image:url('img/agri-impex/banana/2.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+.why-choose .specification{
+	height:100%;
+	width:100%;
+	background-image:url('img/agri-impex/banana/5.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
